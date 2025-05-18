@@ -1,5 +1,5 @@
 # Armoury Management System
-
+The project Armoury is a Java back-end project aims to manage the rifles in an armoury. Controller-Service-Repository pattern and REST API are adopted. We authorise a person to get, update, and delete the rifle's information by the person's id. 
 # Docker PostgreSQL instructions
 ```
 docker compose up -d
