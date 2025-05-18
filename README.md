@@ -9,9 +9,10 @@ psql -U <username>
 ```
 
 Everytime `pom.xml` is modified, it requires Maven to sync project
-# Pack as a jar:
-Maven: clean -> install
-`java -jar armoury-0.0.1-SNAPSHOT.jar --server.port=8080`
+
+# Pack as a jar file
+> Maven: clean -> install
+> `java -jar armoury-0.0.1-SNAPSHOT.jar --server.port=8080`
 
 # Technologies
 Spring Boot, Maven PostgreSQL, Docker
