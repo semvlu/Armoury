@@ -1,0 +1,42 @@
+### Create rifle / person
+POST http://localhost:8080/rifles
+Content-Type: application/json
+
+{
+    "id": "123456",
+    "mfg": "2003-02-22",
+    "owner": "xb2es",
+    "bolt": "false",
+    "boltCmnt": "requires cleaning"
+}
+
+POST http://localhost:8080/persons
+Content-Type: application/json
+
+{
+    "id": "xb2es",
+    "name": "Richelieu",
+    "company": 1,
+    "dob": "2000-09-09",
+    "status": "Lieutenant"
+}
+
+### Get rilfe
+GET http://localhost:8080/rifles/123456
+X-Owner-Id: xb2es
+
+### Update rifle components status & comments
+PUT http://localhost:8080/rifles/components/123456
+X-Owner-Id: xb2es
+Content-Type: application/json
+
+{
+    "id": "123456",
+    "stockCmnt": "change new stock par excellence.",
+    "barrelCmnt": "change new barrel par excellence.",
+    "boltCmnt": "only minor oil."
+}
+
+### Delete rifle
+DELETE http://localhost:8080/rifles/123456
+X-Owner-Id: xb2es
